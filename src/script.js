@@ -73,7 +73,8 @@ const tick = () => {
 
   //   Update camera
   camera.position.x = Math.sin(cursor.x * 10) * 3;
-  camera.position.y = Math.cos(cursor.x * 10) * 3;
+  camera.position.z = Math.cos(cursor.x * 10) * 3;
+  camera.position.y = cursor.y * 5;
   camera.lookAt(mesh.position);
 
   // Render
